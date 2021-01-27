@@ -33,4 +33,54 @@
       }
     }
   }
+
+  .contactUs{
+    input {
+      padding: 10px;
+      margin:10px 0;
+      box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+      border: 2px solid #eee;
+      border-radius:10px;
+      width:30%
+    }
+    textarea{
+      padding: 10px;
+      margin:10px 0;
+      box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+      border: 2px solid #eee;
+      border-radius:10px;
+      width:30%
+    }
+  }
+
+  .contactusButton {
+    color: $white-color;
+    background: transparent;
+    border: 2px solid $white-color;
+    &::after {
+      background: $white-color;
+    }
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+    &:hover {
+      color: $secondary-color;
+      text-decoration: none;
+      background: white;
+  
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+
+  @media screen and (max-width: 770px) {
+    .contactUs{
+      input {
+        width:75%
+      }
+      textarea {
+        width: 75%
+      }
+    }
+  }
 }

@@ -78,4 +78,10 @@
       }
     }
   }
+
+  .removeCover{
+    picture > img {
+      object-fit: fill !important;
+    }
+  }
 }
